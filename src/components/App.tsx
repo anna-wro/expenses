@@ -31,6 +31,8 @@ const App = observer(() => {
           })}
         </tbody>
       </table>
+      {copy.sumTitle}: {expenseStore.totalAmountPLN} PLN (
+      {expenseStore.totalAmountEUR.toFixed(2)} EUR)
     </div>
   );
 });

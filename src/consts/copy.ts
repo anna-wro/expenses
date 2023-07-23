@@ -3,4 +3,5 @@ export const copy = {
   itemTitle: 'Title',
   amountPLN: 'Amount (PLN)',
   amountEUR: 'Amount (EUR)',
+  sumTitle: 'Sum'
 };
