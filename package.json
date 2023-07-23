@@ -1,7 +1,6 @@
 {
   "name": "expenses",
   "version": "1.0.0",
-  "description": "Recruitment project for Playbook Engineering",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
