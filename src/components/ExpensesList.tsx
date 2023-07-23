@@ -5,7 +5,7 @@ import { copy } from '../consts/copy';
 
 const ExpensesList = observer(() => {
   return (
-    <table>
+    <table className="expensesTable">
       <thead>
         <tr>
           <th>{copy.itemTitle}</th>
@@ -25,7 +25,7 @@ const ExpensesList = observer(() => {
               <td>{expense.amountPLN.toFixed(2)}</td>
               <td>{amountInEUR}</td>
               <td>
-                <button onClick={() => expenseStore.removeExpense(expense.id)}>
+                <button className="deleteButton" onClick={() => expenseStore.removeExpense(expense.id)}>
                   {copy.delete}
                 </button>
               </td>

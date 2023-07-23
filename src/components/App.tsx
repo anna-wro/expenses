@@ -12,10 +12,10 @@ const App = observer(() => {
         <h1>{copy.title}</h1>
         <div>1EUR = {expenseStore.exchangeRate} PLN</div>
       </header>
-      <AddExpenseForm />
+      {/* <AddExpenseForm /> */}
       <ExpensesList />
-      {copy.sumTitle}: {expenseStore.totalAmountPLN} PLN (
-      {expenseStore.totalAmountEUR.toFixed(2)} EUR)
+      {/* {copy.sumTitle}: {expenseStore.totalAmountPLN} PLN (
+      {expenseStore.totalAmountEUR.toFixed(2)} EUR) */}
     </div>
   );
 });
