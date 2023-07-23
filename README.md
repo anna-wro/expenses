@@ -19,5 +19,7 @@ However, there is a very remote possibility of ID collision if two expenses are 
 
 ## Suggested improvements
 
-- Confirmation screen before removing an expense
-- Different view when no expenses added
+- **User Interface improvements**: Implementing a confirmation dialog before deleting an expense item, designing a dedicated view for scenarios where no expenses have been added.
+- **Persistent Storage**: Currently, the application's data is not stored beyond the session. In other words, refreshing the page resets all expenses and the exchange rate. - **Utilizing localStorage or sessionStorage** could help retain data on the client's browser, while a backend server would allow for permanent data storage.
+- **Expense Categories**: Introducing categories for expenses could improve the organization and classification of data.
+- **Filtering and Sorting**: As the list of expenses expands, incorporating a filtering and sorting feature might prove beneficial for efficient data handling and presentation.
