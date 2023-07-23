@@ -1,0 +1,21 @@
+{
+  "name": "expenses",
+  "version": "1.0.0",
+  "description": "Recruitment project for Playbook Engineering",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "latest",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "mobx": "^6.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
