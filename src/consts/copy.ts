@@ -1,7 +1,10 @@
 export const copy = {
-  title: 'Expenses list',
+  title: 'List of expenses',
   itemTitle: 'Title',
   amountPLN: 'Amount (PLN)',
   amountEUR: 'Amount (EUR)',
-  sumTitle: 'Sum'
+  sumTitle: 'Sum',
+  addButton: 'Add',
+  addTitle: 'Title of transaction',
+  addAmount: 'Amount (in PLN)',
 };
