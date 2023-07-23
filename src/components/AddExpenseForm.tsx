@@ -17,27 +17,33 @@ const AddExpenseForm = observer(() => {
   };
 
   return (
-    <form onSubmit={handleAddExpense}>
-        <label for="title">{copy.addTitle}</label>
-        <input
-          id="title"
-          type="text"
-          required
-          minlength={5}
-          value={title}
-          onChange={e => setTitle(e.target.value)}
-        />
-        <label for="amount">{copy.addAmount}</label>
-        <input
-          id="amount"
-          type="number"
-          required
-          step="0.01"
-          value={amountPLN}
-          onChange={e => setAmountPLN(e.target.value)}
-        />
-        <button type="submit">{copy.addButton}</button>
-      </form>
+    <form onSubmit={handleAddExpense} className="addForm">
+      <div>
+        <div className="inputContainer">
+          <label for="title">{copy.addTitle}</label>
+          <input
+            id="title"
+            type="text"
+            required
+            minlength={5}
+            value={title}
+            onChange={e => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="inputContainer">
+          <label for="amount">{copy.addAmount}</label>
+          <input
+            id="amount"
+            type="number"
+            required
+            step="0.01"
+            value={amountPLN}
+            onChange={e => setAmountPLN(e.target.value)}
+          />
+        </div>
+      </div>
+      <button type="submit" className="addButton">{copy.addButton}</button>
+    </form>
   );
 });
 
