@@ -1,3 +1,3 @@
 export const copy = {
-    title: 'Expenses list',
-}
+  title: 'Expenses list',
+};
