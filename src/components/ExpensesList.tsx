@@ -6,29 +6,34 @@ import { copy } from '../consts/copy';
 const ExpensesList = observer(() => {
   return (
     <table>
-        <thead>
-          <tr>
-            <th>{copy.itemTitle}</th>
-            <th>{copy.amountPLN}</th>
-            <th>{copy.amountEUR}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {expenseStore.expenses.map(expense => {
-            const amountInEUR = (
-              expense.amountPLN / expenseStore.exchangeRate
-            ).toFixed(2);
-
-            return (
-              <tr key={expense.id}>
-                <td>{expense.title}</td>
-                <td>{expense.amountPLN.toFixed(2)}</td>
-                <td>{amountInEUR}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <thead>
+        <tr>
+          <th>{copy.itemTitle}</th>
+          <th>{copy.amountPLN}</th>
+          <th>{copy.amountEUR}</th>
+          <th>{copy.options}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {expenseStore.expenses.map(expense => {
+          const amountInEUR = (
+            expense.amountPLN / expenseStore.exchangeRate
+          ).toFixed(2);
+          return (
+            <tr key={expense.id}>
+              <td>{expense.title}</td>
+              <td>{expense.amountPLN.toFixed(2)}</td>
+              <td>{amountInEUR}</td>
+              <td>
+                <button onClick={() => expenseStore.removeExpense(expense.id)}>
+                  {copy.delete}
+                </button>
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   );
 });
 
