@@ -5,7 +5,7 @@ The Expenses List is a web application that allows users to keep track of their 
 ## Getting started
 
 1. Clone the repository or download the source code.
-2. Install the dependencies by running the command: `npm install.`
+2. Install the dependencies by running the command: `npm install`
 3. Start the development server with: `npm start`.
 4. Open your web browser and visit: `http://localhost:1234`.
 
