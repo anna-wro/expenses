@@ -27,6 +27,10 @@ The Expenses List is a web application that allows users to keep track of their 
 I chose to use `Date.now()` to generate unique IDs for the expenses because it is a simple and lightweight solution that works well for small application.
 However, there is a very remote possibility of ID collision if two expenses are added at the exact same millisecond. For larger or production applications, it would be better to use an ID generation library like UUID to mitigate this risk.
 
+### Parcel
+
+I chose Parcel over Webpack because it provides a significantly faster and more convenient development experience with its automatic bundling, built-in support for various file types, and seamless integration with popular libraries and frameworks.
+
 ### CSS instead od SASS
 
 CSS was preferred over SASS for styling the user interface in order to prioritize simplicity, size, performance, and compatibility for this specific project, even though SASS offers extra features and flexibility for larger or more complex projects.
