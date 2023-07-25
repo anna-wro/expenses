@@ -4,8 +4,8 @@ import { expenseStore } from './ExpenseStore';
 import { copy } from '../consts/copy';
 
 const AddExpenseForm = observer(() => {
-  const [title, setTitle] = useState();
-  const [amountPLN, setAmountPLN] = useState();
+  const [title, setTitle] = useState('');
+  const [amountPLN, setAmountPLN] = useState('');
 
   const handleAddExpense = e => {
     e.preventDefault();
@@ -42,7 +42,9 @@ const AddExpenseForm = observer(() => {
           />
         </div>
       </div>
-      <button type="submit" className="addButton">{copy.addButton}</button>
+      <button type="submit" className="addButton">
+        {copy.addButton}
+      </button>
     </form>
   );
 });
