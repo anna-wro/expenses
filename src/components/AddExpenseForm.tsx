@@ -9,10 +9,10 @@ const AddExpenseForm = observer(() => {
 
   const handleAddExpense = e => {
     e.preventDefault();
-    if (title.length >= 5) {
+    if (title?.length >= 5) {
       expenseStore.addExpense(title, parseFloat(amountPLN));
-      setTitle(undefined);
-      setAmountPLN(undefined);
+      setTitle('');
+      setAmountPLN(0);
     }
   };
 
