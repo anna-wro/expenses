@@ -20,18 +20,18 @@ const AddExpenseForm = observer(() => {
     <form onSubmit={handleAddExpense} className="addForm">
       <div>
         <div className="inputContainer">
-          <label for="title">{copy.addTitle}</label>
+          <label htmlFor="title">{copy.addTitle}</label>
           <input
             id="title"
             type="text"
             required
-            minlength={5}
+            minLength={5}
             value={title}
             onChange={e => setTitle(e.target.value)}
           />
         </div>
         <div className="inputContainer">
-          <label for="amount">{copy.addAmount}</label>
+          <label htmlFor="amount">{copy.addAmount}</label>
           <input
             id="amount"
             type="number"
